@@ -39,7 +39,7 @@ html {
     padding: 80px 50px 20px 20px;
 }
 
-.logo img{
+.logo img {
     width: 250px;
 }
 
@@ -50,13 +50,15 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    li a{
+
+    li a {
         text-decoration: none;
         font-size: 1.5rem;
         font-weight: 500;
         color: white;
     }
 }
+
 .nav-bar ul li a:hover {
     color: rgb(70, 104, 255);
     transition: all 0.3s ease-in-out;
@@ -72,31 +74,34 @@ ul {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+
     h1 {
         font-size: 5rem;
         font-weight: 500;
         text-align: center;
     }
+
     .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 2rem;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      cursor: pointer;
-      z-index: 1;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        z-index: 1;
     }
 
     .arrow-left {
-      left: 0;
+        left: 0;
     }
 
     .arrow-right {
-      right: 0;
+        right: 0;
     }
+
     .content {
         display: flex;
         justify-content: space-between;
@@ -106,7 +111,8 @@ ul {
         width: 100%;
         height: 100vh;
         position: relative;
-        .terre h2{
+
+        .terre h2 {
             text-shadow: 2px 2px 20px white;
             color: white;
             position: relative;
@@ -114,6 +120,7 @@ ul {
             font-weight: 800;
             text-align: center;
         }
+
         .terre img {
             position: absolute;
             top: 25%;
@@ -124,57 +131,15 @@ ul {
             filter: brightness(0.8);
             pointer-events: none;
         }
+
         .terre .btn {
             position: absolute;
             top: 100;
             padding: 30px 20px;
             width: 100%;
-            margin-left: 30px;  
+            margin-left: 30px;
             z-index: 100;
-            button {
-                margin-left: 50px;
-                padding: 20px 40px;
-                font-size: 2rem;
-                font-weight: 500;
-                color: white;
-                background-color: transparent;
-                border: 2px solid white;
-                border-radius: 10px;
-                cursor: pointer;
-                transition: all 0.3s ease-in-out;
-            }
-            button:hover {
-                background-color: white;
-                color: black;
-                transition: all 0.5s ease-in-out;
-            }
-        }
 
-        .mars h2{
-            text-shadow: 2px 2px 20px white;
-            color: white;
-            position: relative;
-            font-size: 20rem;
-            font-weight: 800;
-            text-align: center;
-        }
-        .mars img {
-            position: absolute;
-            top: 25%;
-            left: 68%;
-            width: 150%;
-            height: 200%;
-            object-fit: cover;
-            filter: brightness(0.8);
-            pointer-events: none;
-        }
-        .mars .btn {
-            position: absolute;
-            top: 100;
-            padding: 30px 20px;
-            width: 100%;
-            margin-left: 30px;  
-            z-index: 100;
             button {
                 margin-left: 50px;
                 padding: 20px 40px;
@@ -187,50 +152,7 @@ ul {
                 cursor: pointer;
                 transition: all 0.3s ease-in-out;
             }
-            button:hover {
-                background-color: white;
-                color: black;
-                transition: all 0.5s ease-in-out;
-            }
-        }
 
-        .jupiter h2{
-            text-shadow: 2px 2px 20px white;
-            color: white;
-            position: relative;
-            font-size: 20rem;
-            font-weight: 800;
-            text-align: center;
-        }
-        .jupiter img {
-            position: absolute;
-            top: 25%;
-            left: 185%;
-            width: 150%;
-            height: 200%;
-            object-fit: cover;
-            filter: brightness(0.8);
-            pointer-events: none;
-        }
-        .jupiter .btn {
-            position: absolute;
-            top: 100;
-            padding: 30px 20px;
-            width: 100%;
-            margin-left: 30px;  
-            z-index: 100;
-            button {
-                margin-left: 50px;
-                padding: 20px 40px;
-                font-size: 2rem;
-                font-weight: 500;
-                color: white;
-                background-color: transparent;
-                border: 2px solid white;
-                border-radius: 10px;
-                cursor: pointer;
-                transition: all 0.3s ease-in-out;
-            }
             button:hover {
                 background-color: white;
                 color: black;
@@ -238,14 +160,13 @@ ul {
             }
         }
     }
-}
 
 
-.bg img {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    z-index: -100;
-    /*filter: brightness(0.5);*/
-}
+    .bg img {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        z-index: -100;
+        /*filter: brightness(0.5);*/
+    }
