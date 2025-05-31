@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
+
 <body>
     <div class="bg">
         <img src="img/bg.png" alt="Space Background">
@@ -32,15 +35,42 @@
     </nav>
     <div class="home" id="home">
         <h1>Spatial Exploration</h1>
-        <div class="content">
-            <h2>TERRE</h2>
-            <img src="img/terre.png" alt="Terre">
-            <div class="btn">
-                <button>Geographique</button>
-                <button>Information</button>
-                <button>Concept Orbito</button>
+        <button class="arrow arrow-left" onclick="prevCard()">&#10094;</button>
+        <div class="content" id="carouselTrack">
+            <div class="terre" id="terre">
+                <h2>TERRE</h2>
+                <img src="img/terre.png" alt="Terre">
+                <div class="btn">
+                    <button>Geographique</button>
+                    <button>Information</button>
+                    <button>Concept Orbito</button>
+                </div>
+            </div>
+            <div class="mars" id="mars">
+                <h2>TERRE</h2>
+                <img src="img/terre.png" alt="Terre">
+                <div class="btn">
+                    <button>Geographique</button>
+                    <button>Information</button>
+                    <button>Concept Orbito</button>
+                </div>
+            </div>
+            <div class="jupiter" id="jupiter">
+                <h2>TERRE</h2>
+                <img src="img/terre.png" alt="Terre">
+                <div class="btn">
+                    <button>Geographique</button>
+                    <button>Information</button>
+                    <button>Concept Orbito</button>
+                </div>
             </div>
         </div>
+        <button class="arrow arrow-right" onclick="nextCard()">&#10095;</button>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
+
 </html>
