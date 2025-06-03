@@ -18,19 +18,43 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="#home"><img src="img/logow-removebg.png" alt="Space Exploration Logo" class="logo" id="logo-theme"></a>
+            <a href="#home"><img src="img/logow-removebg.png" alt="Space Exploration Logo" class="logo"
+                    id="logo-theme"></a>
             <ul class="nav-links">
                 <li><a href="#Gallery">Gallery</a></li>
                 <li><a href="#missions">Missions</a></li>
                 <li><a href="#search">Search</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#docs">Docs</a></li>
             </ul>
+            <div id="menuToggle" class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <button id="toggle-theme"><i class="fas fa-sun"></i></button>
         </nav>
     </header>
     <div class="home">
-        
+        <img src="img/gradient.png" alt="gradient" class="gradient-bg">
+        <div class="layer-blur"></div>
+        <h1 class="os">OUTER SPACE</h1>
+        <img src="img/terre.png" alt="" class="terre" id="terre-theme">
+        <div class="home-content">
+            <div class="text-content">
+                <h1>Space Exploration</h1>
+                <p>Discover the wonders of the universe.</p>
+            </div>
+            <button class="btn">Explore Missions</button>
+            <div class="gallery-content">
+                <h1>Gallery</h1>
+                <p>Dive into the vastness of the universe with this captivating photo gallery, revealing the
+                    breathtaking beauty and mysteries of space.</p>
+                <a href="#gallery" class="btn">View Gallery <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>
+
 </html>
