@@ -449,6 +449,7 @@ body.dark-mode .home {
         border-radius: 25px;
         width: 50%;
         height: 400px;
+        object-fit: cover;
         border: solid 3px black;
         padding: 1px;
         transition: all 0.3s ease-in-out;
@@ -468,7 +469,8 @@ body.dark-mode .home {
             img {
                 transition: all 0.3s ease-in-out;
                 width: 45%;
-                height: auto;
+                height: 200px;
+                object-fit: cover;
                 border-radius: 25px;
 
                 &:hover {
@@ -519,6 +521,74 @@ body.dark-mode .home {
     }
 }
 
+.aurore {
+    border-left: 2px dashed rgba(0, 0, 0, 0.26);
+    border-right: 2px dashed rgba(0, 0, 0, 0.26);
+    margin: 0px 150px 0 150px;
+    padding: 50px;
+    gap: 30px;
+    .image {
+        display: flex;
+        gap: 50px;
+        margin-left: 30px;
+        img {
+            width: 45%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 25px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    .text {
+        display: flex;
+        margin-top: 20px;
+
+        .content {
+            width: 60%;
+            h2 {
+                margin-left: 25px;
+                font-size: 2rem;
+                margin-bottom: 20px;
+                color: black;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+        img {
+            margin-left: 80px;
+            width: 20%;
+            height: auto;
+            background: black;
+            padding: 20px;
+            border-radius: 25px;
+            transform: translateY(-50%);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+body.dark-mode .aurore {
+    border-left: 2px dashed rgba(255, 255, 255, 0.26);
+    border-right: 2px dashed rgba(255, 255, 255, 0.26);
+
+    .text {
+        .content h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        img {
+            background: white;
+        }
+    }
+}
+
 body.dark-mode .photo {
     border: 2px dashed rgba(255, 255, 255, 0.26);
 
@@ -536,8 +606,8 @@ body.dark-mode .photo {
             gap: 30px;
 
             img {
-                width: 45%;
-                height: auto;
+                height: 200px;
+                object-fit: cover;
                 border-radius: 25px;
             }
         }

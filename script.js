@@ -1,6 +1,7 @@
 const toggleThemeBtn = document.getElementById('toggle-theme');
 const logoTheme = document.getElementById('logo-theme');
 const terreTheme = document.getElementById('terre-theme');
+const fuseeTheme = document.getElementById('fusee-theme');
 const themeLogo = logoTheme.querySelector('i');
 const themeIcon = toggleThemeBtn.querySelector('i');
 
@@ -10,6 +11,7 @@ if (localStorage.getItem('theme') === 'dark') {
   themeIcon.classList.replace('fa-sun', 'fa-moon');
   logoTheme.src = logoTheme.src.replace('img/logow-removebg.png', 'img/logo-removebg.png');
   terreTheme.src = terreTheme.src.replace('img/terre.png', 'img/terrew.png');
+  fuseeTheme.src = fuseeTheme.src.replace('img/fuseew.png', 'img/fusee.png');
 }
 
 toggleThemeBtn.addEventListener('click', () => {
@@ -17,6 +19,7 @@ toggleThemeBtn.addEventListener('click', () => {
   const logoSrc = logoTheme.src;
   logoTheme.src = isDark ? logoSrc.replace('img/logow-removebg.png', 'img/logo-removebg.png') : logoSrc.replace('img/logo-removebg.png', 'img/logow-removebg.png');
   terreTheme.src = isDark ? terreTheme.src.replace('img/terre.png', 'img/terrew.png') : terreTheme.src.replace('img/terrew.png', 'img/terre.png');
+  fuseeTheme.src = isDark ? fuseeTheme.src.replace('img/fuseew.png', 'img/fusee.png') : fuseeTheme.src.replace('img/fusee.png', 'img/fuseew.png');
   themeIcon.classList.replace(isDark ? 'fa-sun' : 'fa-moon', isDark ? 'fa-moon' : 'fa-sun');
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
