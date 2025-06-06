@@ -618,26 +618,206 @@ body.dark-mode .home {
 }
 
 footer {
-    padding: 200px 220px 100px 220px;
+    padding: 200px 200px 100px 200px;
     margin-top: 200px;
     background: black;
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.800) 50%, rgba(0, 0, 0, 0.600) 100%);
+    box-shadow: 2px 2px 50px black;
     display: flex;
+
     .about {
+        padding: 20px 50px 0 50px;
+        border-right: 2px dashed rgba(255, 255, 255, 0.26);
+
         .link {
+            padding-bottom: 20px;
+            display: flex;
+
             img {
                 width: 150px;
             }
-            display: flex;
-            text-decoration: none;
-            color: white;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            transition: all 0.2s ease-in-out;
 
-            &:hover {
-                color: gray;
+            .social-icon {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                align-items: center;
+                margin-left: 50px;
+
+                a {
+                    color: white;
+                    font-size: 1.5rem;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        color: rgb(255, 0, 255);
+                    }
+                }
             }
+        }
+
+        .confidentiality {
+            padding: 20px 0 20px 0;
+            border-top: 2px dashed rgba(255, 255, 255, 0.26);
+            border-bottom: 2px dashed rgba(255, 255, 255, 0.26);
+
+            p {
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+                color: gray;
+                margin-top: 10px;
+
+                i {
+                    transform: rotate(60deg);
+                }
+
+                &:hover {
+                    color: rgb(255, 0, 255);
+                }
+            }
+        }
+
+        .copyright {
+            p {
+                color: white;
+                font-size: 0.8rem;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .missions {
+        padding: 20px 50px 0 50px;
+        border-right: 2px dashed rgba(255, 255, 255, 0.26);
+        width: 100%;
+
+        h1 {
+            color: gray;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            border-bottom: 2px dashed rgba(255, 255, 255, 0.26);
+        }
+
+        .mission-item {
+            h2 {
+                cursor: pointer;
+                color: white;
+                font-weight: 500;
+                font-size: 1rem;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: rgb(255, 0, 255);
+                }
+            }
+
+            p {
+                margin-bottom: 10px;
+                color: white;
+                font-size: 0.9rem;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .goal {
+        padding: 20px 50px 0 50px;
+        border-right: 2px dashed rgba(255, 255, 255, 0.26);
+
+        h1 {
+            color: gray;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            border-bottom: 2px dashed rgba(255, 255, 255, 0.26);
+        }
+
+        p {
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+    }
+
+    .docs {
+        padding: 20px 50px 0 50px;
+
+        h1 {
+            color: gray;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            border-bottom: 2px dashed rgba(255, 255, 255, 0.26);
+        }
+
+        p {
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+    }
+}
+
+body.dark-mode footer {
+    background: black;
+    background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.800) 50%, rgba(255, 255, 255, 0.600) 100%);
+    color: white;
+    box-shadow: 2px 2px 50px white;
+
+    .about {
+
+        .link {
+            img {
+                filter: invert(1);
+            }
+
+            .social-icon {
+
+                a {
+                    color: black;
+
+                    &:hover {
+                        color: rgb(255, 0, 255);
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            p {
+                color: black;
+            }
+        }
+    }
+
+    .missions {
+
+        .mission-item {
+            h2 {
+                color: black;
+
+                &:hover {
+                    color: rgb(255, 0, 255);
+                }
+            }
+
+            p {
+                color: black;
+            }
+        }
+    }
+
+    .goal {
+        p {
+            color: black;
+        }
+    }
+
+    .docs {
+
+        p {
+            color: black;
         }
     }
 }
