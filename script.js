@@ -24,9 +24,9 @@ toggleThemeBtn.addEventListener('click', () => {
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
 
-const menu = document.querySelector(".menu-toggle")
-const navLinks = document.querySelector(".nav-links")
+const menu = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
 menu.addEventListener('click', () => {
-  navLinks.classList.toggle('mobile-menu')
+  navLinks.classList.toggle('mobile-menu');
 })
