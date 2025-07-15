@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:500');
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
+    border-radius: 0px;
+    border: transparent;
+}
+
+body {
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.background {
+    position: fixed;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+header {
+    border-bottom: solid 1px black;
+    padding-bottom: 20px;
+    margin: 0px 15px 0 15px;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            transition: all 0.3s ease-in-out;
+            width: 150px;
+        }
+
+        ul {
+            background-color: rgb(236, 236, 236);
+            padding: 15px 0px;
+            border-radius: 10px;
+            display: flex;
+            list-style: none;
+            transition: all 0.3s ease-in-out;
+
+            li {
+                margin: 0 10px;
+                transition: all 0.3s ease-in-out;
+
+                a {
+                    border: solid 1px transparent;
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 500;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: white;
+                        box-shadow: 0px 0px 10px rgb(137, 137, 137);
+                    }
+                }
+            }
+        }
+        input {
+            padding: 10px;
+            border-radius: 8px;
+            border: solid 1px transparent;
+            background-color: rgb(236, 236, 236);
+            color: black;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+
+            &:focus {
+                outline: none;
+                border-color: 2px black;
+                box-shadow: 0px 0px 10px rgb(137, 137, 137);
+            }
+        }
+    }
+}
